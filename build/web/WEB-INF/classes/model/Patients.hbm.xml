@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 13, 2015 2:35:12 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Patients" table="patients" catalog="docnet">
+        <id name="pid" type="long">
+            <column name="pid" />
+            <generator class="assigned"></generator>
+        </id>
+        <property name="name" type="string">
+            <column name="Name" length="45" not-null="true" />
+        </property>
+        <property name="address" type="string">
+            <column name="Address" length="45" not-null="true" />
+        </property>
+        <property name="image" type="string">
+            <column name="Image" length="45" />
+        </property>
+        <property name="phoneNumber" type="long">
+            <column name="PhoneNumber" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="Email" length="45" not-null="true" />
+        </property>
+        <property name="bio" type="string">
+            <column name="Bio" length="100" />
+        </property>
+        <property name="age" type="int">
+            <column name="Age" not-null="true" />
+        </property>
+        <property name="bloodGroup" type="string">
+            <column name="BloodGroup" length="50" not-null="true" />
+        </property>
+        <property name="emergencyContact" type="long">
+            <column name="EmergencyContact" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

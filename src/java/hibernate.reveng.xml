@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="docnet"/>
+  <table-filter match-name="patients"/>
+  <table-filter match-name="news"/>
+  <table-filter match-name="blogs"/>
+  <table-filter match-name="timings"/>
+  <table-filter match-name="doctors"/>
+  <table-filter match-name="medical_reports"/>
+  <table-filter match-name="logintable"/>
+  <table-filter match-name="appointments"/>
+  <table-filter match-name="images"/>
+  <table-filter match-name="events"/>
+</hibernate-reverse-engineering>

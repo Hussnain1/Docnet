@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 13, 2015 2:35:12 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Events" table="events" catalog="docnet">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned"></generator>
+        </id>
+        <property name="eventname" type="string">
+            <column name="eventname" length="45" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="3000" not-null="true" />
+        </property>
+        <property name="eventlocation" type="string">
+            <column name="eventlocation" length="1000" not-null="true" />
+        </property>
+        <property name="eventstime" type="time">
+            <column name="eventstime" length="8" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

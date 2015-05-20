@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 13, 2015 2:35:12 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Appointments" table="appointments" catalog="docnet">
+        <id name="appointmentid" type="java.lang.Integer">
+            <column name="appointmentid" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="pateientidentifier" type="long">
+            <column name="pateientidentifier" not-null="true" />
+        </property>
+        <property name="docid" type="int">
+            <column name="docid" not-null="true" />
+        </property>
+        <property name="timeofday" type="string">
+            <column name="timeofday" length="250" not-null="true" />
+        </property>
+        <property name="starttime" type="time">
+            <column name="starttime" length="8" not-null="true" />
+        </property>
+        <property name="endtime" type="time">
+            <column name="endtime" length="8" not-null="true" />
+        </property>
+        <property name="date" type="date">
+            <column name="date" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

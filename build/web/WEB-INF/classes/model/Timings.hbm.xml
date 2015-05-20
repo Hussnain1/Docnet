@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 13, 2015 2:35:12 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Timings" table="timings" catalog="docnet">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned"></generator>
+        </id>
+        <property name="mondaystartM" type="time">
+            <column name="MondaystartM" length="8" />
+        </property>
+        <property name="mondayendM" type="time">
+            <column name="MondayendM" length="8" />
+        </property>
+        <property name="mondayLocM" type="string">
+            <column name="MondayLocM" length="20" />
+        </property>
+        <property name="tuesdaystartM" type="time">
+            <column name="TuesdaystartM" length="8" />
+        </property>
+        <property name="tuesdayendM" type="time">
+            <column name="TuesdayendM" length="8" />
+        </property>
+        <property name="tuesdayLocM" type="string">
+            <column name="TuesdayLocM" length="20" />
+        </property>
+        <property name="wednesdaystartM" type="time">
+            <column name="WednesdaystartM" length="8" />
+        </property>
+        <property name="wednesdayendM" type="time">
+            <column name="WednesdayendM" length="8" />
+        </property>
+        <property name="wednesdayLocM" type="string">
+            <column name="WednesdayLocM" length="20" />
+        </property>
+        <property name="thursdaystartM" type="time">
+            <column name="ThursdaystartM" length="8" />
+        </property>
+        <property name="thursdayendM" type="time">
+            <column name="ThursdayendM" length="8" />
+        </property>
+        <property name="thursdayLocM" type="string">
+            <column name="ThursdayLocM" length="20" />
+        </property>
+        <property name="fridaystartM" type="time">
+            <column name="FridaystartM" length="8" />
+        </property>
+        <property name="fridayendM" type="time">
+            <column name="FridayendM" length="8" />
+        </property>
+        <property name="fridayLocM" type="string">
+            <column name="FridayLocM" length="20" />
+        </property>
+        <property name="saturdaystartM" type="time">
+            <column name="SaturdaystartM" length="8" />
+        </property>
+        <property name="saturdayendM" type="time">
+            <column name="SaturdayendM" length="8" />
+        </property>
+        <property name="saturdayLocM" type="string">
+            <column name="SaturdayLocM" length="20" />
+        </property>
+        <property name="sundaystartM" type="time">
+            <column name="SundaystartM" length="8" />
+        </property>
+        <property name="sundayendM" type="time">
+            <column name="SundayendM" length="8" />
+        </property>
+        <property name="sundayLocM" type="string">
+            <column name="SundayLocM" length="20" />
+        </property>
+        <property name="mondaystartE" type="time">
+            <column name="MondaystartE" length="8" />
+        </property>
+        <property name="mondayendE" type="time">
+            <column name="MondayendE" length="8" />
+        </property>
+        <property name="mondayLocE" type="string">
+            <column name="MondayLocE" length="20" />
+        </property>
+        <property name="tuesdaystartE" type="time">
+            <column name="TuesdaystartE" length="8" />
+        </property>
+        <property name="tuesdayendE" type="time">
+            <column name="TuesdayendE" length="8" />
+        </property>
+        <property name="tuesdayLocE" type="string">
+            <column name="TuesdayLocE" length="20" />
+        </property>
+        <property name="wednesdaystartE" type="time">
+            <column name="WednesdaystartE" length="8" />
+        </property>
+        <property name="wednesdayendE" type="time">
+            <column name="WednesdayendE" length="8" />
+        </property>
+        <property name="wednesdayLocE" type="string">
+            <column name="WednesdayLocE" length="20" />
+        </property>
+        <property name="thursdaystartE" type="time">
+            <column name="ThursdaystartE" length="8" />
+        </property>
+        <property name="thursdayendE" type="time">
+            <column name="ThursdayendE" length="8" />
+        </property>
+        <property name="thursdayLocE" type="string">
+            <column name="ThursdayLocE" length="20" />
+        </property>
+        <property name="fridaystartE" type="time">
+            <column name="FridaystartE" length="8" />
+        </property>
+        <property name="fridayendE" type="time">
+            <column name="FridayendE" length="8" />
+        </property>
+        <property name="fridayLocE" type="string">
+            <column name="FridayLocE" length="20" />
+        </property>
+        <property name="saturdaystartE" type="time">
+            <column name="SaturdaystartE" length="8" />
+        </property>
+        <property name="saturdayendE" type="time">
+            <column name="SaturdayendE" length="8" />
+        </property>
+        <property name="saturdayLocE" type="string">
+            <column name="SaturdayLocE" length="20" />
+        </property>
+        <property name="sundaystartE" type="time">
+            <column name="SundaystartE" length="8" />
+        </property>
+        <property name="sundayendE" type="time">
+            <column name="SundayendE" length="8" />
+        </property>
+        <property name="sundayLocE" type="string">
+            <column name="SundayLocE" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

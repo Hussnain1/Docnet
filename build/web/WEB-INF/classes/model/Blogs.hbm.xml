@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 13, 2015 2:35:12 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Blogs" table="blogs" catalog="docnet">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="blogname" type="string">
+            <column name="blogname" length="250" not-null="true" />
+        </property>
+        <property name="blogdate" type="date">
+            <column name="blogdate" length="10" not-null="true" />
+        </property>
+        <property name="blogimage" type="string">
+            <column name="blogimage" length="250" not-null="true" />
+        </property>
+        <property name="blogcontent" type="string">
+            <column name="blogcontent" length="3000" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
